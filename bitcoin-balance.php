@@ -1,12 +1,3 @@
-# bitcoin-balance-api-php
-
-Easy-to-use API for retrieving the balance of a Bitcoin wallet with https://bitcoin-balance-api.com/
-
-Swagger: https://api-testnet.bitcoin-balance-api.com/docs/
-
-## Get Balance
-
-```
 #!/usr/bin/env php
 <?php
 $ch = curl_init();
@@ -19,4 +10,3 @@ curl_close($ch);
 $obj = json_decode($result);
 echo 'Bitcoin Balance: ' . $obj->balance;
 ?>
-```
